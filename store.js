@@ -1,3 +1,5 @@
+
+
 function store() {
   xhr = new XMLHttpRequest();
   xhr.open("post", "chatInsert.php", true);

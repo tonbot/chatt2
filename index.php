@@ -6,6 +6,15 @@
     <style></style>
     <script src="chatAjax.js"></script>
     <script src="store.js" type="text/javascript"></script>
+    <script>
+     function myFunction(event) {
+           var x = event.code;
+            if (x=="Enter"){
+              store();
+              cleartxt();
+            }
+}
+</script>
     <style>
       * {
         margin: 0px;
@@ -104,7 +113,7 @@
                  <input type="text" name="name" id="name" />
                </div>
                <div class="txt">
-                 <input type="text" name="msg" autocomplete="off" placeholder="Type your message" id="msg" onclick="prm()"/>
+                 <input type="text" name="msg" autocomplete="off" placeholder="Type your message" id="msg" onclick="prm()" onkeypress="myFunction(event)"/>
                  <input type="button" name="submit" id="sub" onclick="store(); cleartxt();" value="submit"/>
                </div>
           </form>

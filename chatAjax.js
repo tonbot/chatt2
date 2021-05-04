@@ -1,3 +1,4 @@
+
 function ton() {
   var xhr = new XMLHttpRequest();
   xhr.open("post", "chatFetch.php", true);
@@ -10,7 +11,10 @@ document.getElementById("messageParent").innerHTML="";
         data(ade);
       }
     }
+    
   };
+
+
   function data(tunde) {
     for (var i = 0; i < tunde.length; i++) {
       var tun = tunde[i];
